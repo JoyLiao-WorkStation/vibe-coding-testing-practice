@@ -38,7 +38,7 @@ describe('AdminPage', () => {
                     <AdminPage />
                 </MemoryRouter>
             );
-            
+
             expect(screen.getByRole('heading', { name: /管理後台/i })).toBeInTheDocument();
             expect(screen.getByText('← 返回')).toBeInTheDocument();
             expect(screen.getByText('管理員專屬頁面')).toBeInTheDocument();
@@ -94,7 +94,7 @@ describe('AdminPage', () => {
                 </MemoryRouter>
             );
 
-            const logoutButton = screen.getByRole('button', { name: '登出' });
+            const logoutButton = screen.getByRole('button', { name: '登出augfufhhfkafaaf' });
             await user.click(logoutButton);
 
             expect(mockLogout).toHaveBeenCalled();
