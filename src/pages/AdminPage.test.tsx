@@ -94,7 +94,7 @@ describe('AdminPage', () => {
                 </MemoryRouter>
             );
 
-            const logoutButton = screen.getByRole('button', { name: '登出augfufhhfkafaaf' });
+            const logoutButton = screen.getByRole('button', { name: '登出' });
             await user.click(logoutButton);
 
             expect(mockLogout).toHaveBeenCalled();
